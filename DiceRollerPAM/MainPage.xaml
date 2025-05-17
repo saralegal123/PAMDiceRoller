@@ -1,0 +1,32 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="DiceRoller.MainPage"
+            Title="Dice Roller">
+    
+    <VerticalStackLayout 
+        Padding="20" Spacing="10">
+        <Label Text="Dice Roller" 
+        FontSize="28" HorizontalOptions="Center" />
+
+        <Picker x:Name="dicePicker" Title="Escolha o tipo de dado (ex: D6)">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>D6</x:String>
+                    <x:String>D8</x:String>
+                    <x:String>D10</x:String>
+                    <x:String>D12</x:String>
+                    <x:String>D16</x:String>
+                    <x:String>D20</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+        <Picker x:Name="numeroEscolhidoPicker" Title="Escolha seu número" />
+        
+        <Button Text="Jogar Dado" Clicked="OnJogarClicked" />
+        <Label x:Name="resultadoLabel" Text="Resultado aparecerá aqui" FontSize="18" />
+        <Label x:Name="pontosLabel" Text="Pontos: 0" />
+        <Label x:Name="sequenciaLabel" Text="Sequência: 0" />
+        <Label x:Name="somaLabel" Text="Soma das Faces Opostas: 0" />
+    </VerticalStackLayout>
+    
+</ContentPage>
