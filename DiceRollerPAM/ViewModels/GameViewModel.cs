@@ -7,8 +7,19 @@ using System.Threading.Tasks;
 
 namespace DiceRollerPAM.ViewModels
 {
-    public class GameViewModel : ObservableObject
+    public partial class GameViewModel : ObservableObject
     {
+        [ObservableProperty]
+        private string diceImage;
+
+        [ObservableProperty]
+        private string nomeUsuario;
+
+        GameViewModel() {
+            diceImage = "dice1.png";
+            nomeUsuario = "Eu";
+
+        }
 
     }
 }

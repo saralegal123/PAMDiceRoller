@@ -6,25 +6,15 @@
 
     <VerticalStackLayout>
         <!-- BINDING - é uma vinculação -->
-        <Image Source="{Binding DiceImage}"/>
+        <Image Source="{Binding diceImage}"/>
             
         <Button
             Text="Clique aqui"
         />
         
          <Label 
-         Text="{Binding NomwUsuario}"/>
+         Text="{Binding nomeUsuario}"/>
 
-        <Picker
-            <Picker.Items
-                <x:String>1</x:String>
-                <x:String>2</x:String>
-                <x:String>3</x:String>
-                <x:String>4</x:String>
-                <x:String>5</x:String>
-            <x:String>6</x:String>
-            </Picker.Items>
-        </Picker>
             
     </VerticalStackLayout>
 </ContentPage>
