@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 
-namespace DiceRollerPAM
+namespace DiceRoller
 {
     public static class MauiProgram
     {
@@ -16,7 +16,7 @@ namespace DiceRollerPAM
                 });
 
 #if DEBUG
-    		builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
 
             return builder.Build();
